@@ -8,7 +8,7 @@ class Pedido:
     def calcular_valor(self):
         soma = 0
         for p in self.produtos:
-            soma += p.preco
+            soma += p.preco * p.quantidade
         print(f'Total: {soma}')
 
 class Produto:
